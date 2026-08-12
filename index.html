@@ -121,6 +121,21 @@
   .legend-chip .artist{font-family:'Playfair Display',serif;font-weight:700;font-size:1.05rem;color:var(--cream);}
   .legend-chip .era{font-size:0.72rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-top:6px;}
 
+  /* MUSICIANS */
+  .musicians{background:var(--purple);}
+  .musicians-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;
+  }
+  .musician-card{
+    background:linear-gradient(160deg, rgba(255,107,53,0.12), rgba(43,16,85,0.4));
+    border:1px solid rgba(244,196,48,0.3);
+    border-radius:8px;padding:20px 14px;text-align:center;
+  }
+  .musician-card .name{font-family:'Playfair Display',serif;font-weight:700;font-size:1.05rem;color:var(--cream);}
+  .musician-card .role{font-size:0.72rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-top:6px;}
+  .musician-card .ig{display:block;margin-top:10px;font-size:0.85rem;color:var(--orange);text-decoration:none;}
+  .musician-card .ig:hover{text-decoration:underline;}
+
   /* SHOWS */
   .shows{background:var(--purple);}
   .show-row{
@@ -200,6 +215,7 @@
     <div class="navlinks" id="navLinks">
       <a href="#about">The Concept</a>
       <a href="#legends">The Legends</a>
+      <a href="#musicians">The Band</a>
       <a href="#media">Media</a>
       <a href="#booking">Booking</a>
     </div>
@@ -292,6 +308,25 @@
       <div class="legend-chip"><div class="artist">Ian Gillan</div><div class="era">Deep Purple</div></div>
       <div class="legend-chip"><div class="artist">Ozzy Osbourne</div><div class="era">Black Sabbath</div></div>
       <div class="legend-chip"><div class="artist">Dave Grohl</div><div class="era">Foo Fighters</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="musicians" id="musicians">
+  <div class="wrap">
+    <h2 class="section-title">The Band</h2>
+    <p class="section-sub">The musicians behind every legend Mr. Pipes channels.</p>
+    <div class="divider"></div>
+    <div class="musicians-grid">
+      <div class="musician-card"><div class="name">Zephyr Avalon</div><div class="role">Bass</div><a class="ig" href="https://www.instagram.com/zephyravalon_/" target="_blank" rel="noopener">@zephyravalon_</a></div>
+      <div class="musician-card"><div class="name">Jaydon Beans</div><div class="role">Drums</div><a class="ig" href="https://www.instagram.com/jaydonbean/" target="_blank" rel="noopener">@jaydonbean</a></div>
+      <div class="musician-card"><div class="name">Will Brahm</div><div class="role">Guitar</div><a class="ig" href="https://www.instagram.com/willbrahm/" target="_blank" rel="noopener">@willbrahm</a></div>
+      <div class="musician-card"><div class="name">Tom Frazer</div><div class="role">Guitar</div><a class="ig" href="https://www.instagram.com/tom.frazer/" target="_blank" rel="noopener">@tom.frazer</a></div>
+      <div class="musician-card"><div class="name">Brian Grabin</div><div class="role">Bass</div><a class="ig" href="https://www.instagram.com/briangrabin/" target="_blank" rel="noopener">@briangrabin</a></div>
+      <div class="musician-card"><div class="name">Pablo Martins</div><div class="role">Guitar</div><a class="ig" href="https://www.instagram.com/pablomartinsgtr/" target="_blank" rel="noopener">@pablomartinsgtr</a></div>
+      <div class="musician-card"><div class="name">Olivia Morreale</div><div class="role">Vocals</div><a class="ig" href="https://www.instagram.com/oliviamorreale_/" target="_blank" rel="noopener">@oliviamorreale_</a></div>
+      <div class="musician-card"><div class="name">Cole Riddle</div><div class="role">Keyboard, Drums</div><a class="ig" href="https://www.instagram.com/coleinspace/" target="_blank" rel="noopener">@coleinspace</a></div>
+      <div class="musician-card"><div class="name">Skylar</div><div class="role">Drums</div><a class="ig" href="https://www.instagram.com/rnbjazzdrums_/" target="_blank" rel="noopener">@rnbjazzdrums_</a></div>
     </div>
   </div>
 </section>
