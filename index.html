@@ -154,8 +154,9 @@
 
   /* BOOKING */
   .booking{background:var(--purple);}
-  .booking-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;}
-  @media (max-width:800px){.booking-grid{grid-template-columns:1fr;}}
+  .booking-grid{display:grid;grid-template-columns:1fr;max-width:520px;margin:0 auto;text-align:center;}
+  .booking-grid .social-row{justify-content:center;}
+  .email-cta{display:inline-block;margin-top:28px;}
   form{display:flex;flex-direction:column;gap:14px;}
   input,textarea{
     background:rgba(20,16,31,0.6);border:1px solid rgba(244,196,48,0.3);border-radius:6px;
@@ -318,7 +319,7 @@
     <div class="booking-grid">
       <div>
         <ul class="contact-list">
-          <li><span class="label">Booking Email</span>[booking@mrpipesexperience.com]</li>
+          <li><span class="label">Booking Email</span><a href="mailto:booking@mrpipesexperience.com" style="color:inherit;">booking@mrpipesexperience.com</a></li>
           <li><span class="label">Phone</span>310-493-0543</li>
           <li><span class="label">Based In</span>Hermosa Beach, CA</li>
         </ul>
@@ -329,14 +330,8 @@
           <a href="#">X</a>
           <a href="https://www.youtube.com/@Mr.PipesExperience" target="_blank" rel="noopener">YouTube</a>
         </div>
+        <a class="btn btn-primary email-cta" href="mailto:booking@mrpipesexperience.com?subject=Booking%20Inquiry%20-%20Mr.%20Pipes%20Experience">Send Inquiry</a>
       </div>
-      <form onsubmit="event.preventDefault(); alert('Thanks! Replace this form action with your booking email or a service like Formspree.');">
-        <input type="text" placeholder="Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="text" placeholder="Venue / Event (optional)">
-        <textarea placeholder="Tell us about your event, date, and location"></textarea>
-        <button type="submit" class="btn btn-primary" style="border:none;cursor:pointer;">Send Inquiry</button>
-      </form>
     </div>
   </div>
 </section>
